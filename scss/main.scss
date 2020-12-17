@@ -1,0 +1,13 @@
+@import "./config", "./mixins", "./variables";
+
+.grid {
+    margin: 5rem auto;
+    width: max-content;
+    white-space: pre;
+}
+
+.btn {
+    display: block;
+    margin: 2rem auto;
+    width: fit-content;
+}
