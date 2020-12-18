@@ -61,6 +61,7 @@ body {
   background-color: #797979;
   border: 1px solid black;
   border-radius: 3px;
+  cursor: pointer;
   height: 20px;
   margin: -2px 0;
   width: 20px;
