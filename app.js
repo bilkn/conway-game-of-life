@@ -1,5 +1,5 @@
 const grid = document.querySelector('.grid');
-const btn = document.querySelector(".btn");
+const btn = document.querySelector(".js-generation-btn");
 btn.addEventListener("click", prepareActions);
 let arr = [];
 function fillArray(count) {
@@ -75,4 +75,4 @@ function updateGrid(renderArr) {
   });
 }
 
-populateGridByArray(fillArray(40), 40);
+populateGridByArray(fillArray(30), 30);

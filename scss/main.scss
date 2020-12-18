@@ -1,13 +1,47 @@
-@import "./config", "./mixins", "./variables";
-
+@import './config', './mixins', './variables';
+body {
+  background-color: #bbbab9;
+  padding-top: 2rem;
+}
 .grid {
-    margin: 5rem auto;
-    width: max-content;
-    white-space: pre;
+  margin: 0 auto;
+  white-space: pre;
+  width: max-content;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  width: 600px;
+}
+.btn {
+  appearance: none;
+  background-color: #c24914;
+  border: none;
+  border-radius: 5px;
+  color: rgb(253, 253, 253);
+  cursor: pointer;
+  display: block;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 100ms ease-in;
+  width: fit-content;
 }
 
-.btn {
-    display: block;
-    margin: 2rem auto;
-    width: fit-content;
+.btn:hover {
+  background-color: #c24814d2;
+}
+
+.grid input {
+  appearance: none;
+  background-color: rgb(121, 121, 121);
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 20px;
+  margin: -2px 0;
+  width: 20px;
+}
+
+.grid input:checked {
+  background-color: #fc8621;
 }
