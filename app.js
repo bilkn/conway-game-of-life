@@ -1,7 +1,15 @@
 const grid = document.querySelector('.grid');
-const btn = document.querySelector(".js-generation-btn");
-btn.addEventListener("click", prepareActions);
+const generationBtn = document.querySelector('.js-generation-btn');
+const resetBtn = document.querySelector('.js-reset-btn');
 let arr = [];
+generationBtn.addEventListener('click', prepareActions);
+// uncheck all the selectboxes.
+resetBtn.addEventListener('click', () => {
+  arr.flat().forEach((box) => {
+    box.checked = false;
+  });
+});
+
 function fillArray(count) {
   for (let row = 0; row < count; row++) {
     let innerArr = [];
