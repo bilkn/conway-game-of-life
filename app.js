@@ -3,13 +3,15 @@ const generationBtn = document.querySelector('.js-generation-btn');
 const resetBtn = document.querySelector('.js-reset-btn');
 let arr = [];
 generationBtn.addEventListener('click', prepareActions);
-// uncheck all the selectboxes.
+
+// Unchecks all the checkboxes.
 resetBtn.addEventListener('click', () => {
   arr.flat().forEach((box) => {
     box.checked = false;
   });
 });
 
+// Fills the array with checkboxes.
 function fillArray(count) {
   for (let row = 0; row < count; row++) {
     let innerArr = [];
@@ -23,6 +25,7 @@ function fillArray(count) {
   return arr;
 }
 
+// Populates the grid by the array of checkboxes.
 function populateGridByArray(arr, count) {
   arr.flat().forEach((element, i) => {
     if (i % count == 0) grid.appendChild(elt('br'));
@@ -35,6 +38,7 @@ function elt(node) {
   return element;
 }
 
+// Decides which checkboxes will be checked or unchecked.
 function prepareActions() {
   let willCheckedBoxes = [];
   let willUncheckedBoxes = [];
@@ -58,6 +62,7 @@ function prepareActions() {
   updateGrid(renderArr);
 }
 
+// Counts the checked checkboxes around the checkbox (3x3) that currently is tested.
 function countNeighbours(row, col) {
   let count = 0;
   for (let x = -1; x <= 1; x++) {
@@ -74,6 +79,7 @@ function countNeighbours(row, col) {
   return count;
 }
 
+// Updates the checkboxes inside the grid.
 function updateGrid(renderArr) {
   renderArr[0].forEach((box) => {
     box.checked = true;
