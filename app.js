@@ -1,3 +1,4 @@
+"use strict";
 const grid = document.querySelector('.grid');
 const generationBtn = document.querySelector('.js-generation-btn');
 const resetBtn = document.querySelector('.js-reset-btn');
