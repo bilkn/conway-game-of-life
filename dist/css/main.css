@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #bbbab9;
+  background: radial-gradient(-45deg, #be2323, #7a2d2d, #353333);
   padding-top: 2rem;
 }
 
@@ -35,7 +35,7 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #c24914;
+  background: linear-gradient(-45deg, #f3a20d, #be4f2d);
   border: none;
   border-radius: 5px;
   color: #fdfdfd;
@@ -58,15 +58,22 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #797979;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbab9), color-stop(#9a9ec5), to(#9198e5)), #797979;
+  background: linear-gradient(#bbbab9, #9a9ec5, #9198e5), #797979;
   border: 1px solid black;
   border-radius: 3px;
+  cursor: pointer;
   height: 20px;
   margin: -2px 0;
   width: 20px;
 }
 
+.grid input:hover {
+  background: linear-gradient(-45deg, #fffb00, #ee5007);
+  opacity: 0.5;
+}
+
 .grid input:checked {
-  background-color: yellow;
+  background: linear-gradient(-45deg, #fffb00, #ee5007);
 }
 /*# sourceMappingURL=main.css.map */
