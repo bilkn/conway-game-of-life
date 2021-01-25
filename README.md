@@ -38,7 +38,7 @@ npm install
 npm run start
 ```
 
-4. Explore
+4. Play
 
 ``` 
 Enjoy :)
