@@ -1,0 +1,23 @@
+{
+  "name": "john-conway-game-of-life",
+  "version": "1.0.0",
+  "description": "A cellular automaton game clone that invented by Cambridge mathematician John Conway.",
+  "main": "app.js",
+  "scripts": {
+    "start": "concurrently \"http-server -a localhost -p 8000 -o\" \"open http://localhost:8000/build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilkn/john-conway-game-of-life.git"
+  },
+  "author": "Bilkan Konus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilkn/john-conway-game-of-life/issues"
+  },
+  "homepage": "https://github.com/bilkn/john-conway-game-of-life#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "http-server": "^0.12.3"
+  }
+}
