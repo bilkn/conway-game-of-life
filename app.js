@@ -1,9 +1,21 @@
-"use strict";
+'use strict';
 const grid = document.querySelector('.grid');
 const generationBtn = document.querySelector('.js-generation-btn');
 const resetBtn = document.querySelector('.js-reset-btn');
+const closeBtn = document.querySelector('.js-close-btn');
+const rulestBtn = document.querySelector('.js-rules-btn');
+const rulesWrapper = document.querySelector(".rules-wrapper");
+const darkBg = document.querySelector('.dark-background');
 let arr = [];
+
+const handleRulesClick = ()=> {
+  rulesWrapper.classList.toggle("rules-wrapper--active");
+  darkBg.classList.toggle('dark-background--active');
+}
+
 generationBtn.addEventListener('click', prepareActions);
+closeBtn.addEventListener('click', handleRulesClick);
+rulestBtn.addEventListener('click', handleRulesClick);
 
 // Unchecks all the checkboxes.
 resetBtn.addEventListener('click', () => {
