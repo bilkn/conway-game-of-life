@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A cellular automaton game clone that invented by Cambridge mathematician John Conway.">
+    <meta
+      name="description"
+      content="A cellular automaton game clone that invented by Cambridge mathematician John Conway."
+    />
     <title>Game of Life</title>
     <link rel="stylesheet" href="dist/css/main.css" />
     <script
@@ -20,6 +23,69 @@
       <button class="btn js-reset-btn">Reset</button>
     </div>
 
+    <div class="rules-wrapper">
+      <div class="rules-container">
+        <button class="rules-container__btn js-close-btn">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <h2 class="rules-container__title">Rules</h2>
+        <h3 class="rules-container__subtitle">
+          For a space that is populated:
+        </h3>
+        <!-- Rule #1 start -->
+        <div class="rules-container__rule">
+          <p class="rules-container__text">
+            Each cell with one or no neighbors dies, as if by solitude.
+          </p>
+          <div class="rules-container__img-container">
+            <img src="./assets/rule1-first.png" alt="" />
+            <i class="fas fa-arrow-right rules-container__icon"></i>
+            <img src="./assets/rule1-sec.png" alt="" />
+          </div>
+        </div>
+        <!-- Rule #1 end -->
+        <!-- Rule #2 start -->
+        <div class="rules-container__rule">
+          <p class="rules-container__text">
+            Each cell with four or more neighbors dies, as if by overpopulation.
+          </p>
+          <div class="rules-container__img-container">
+            <img src="./assets/rule2-first.png" alt="" />
+            <i class="fas fa-arrow-right rules-container__icon"></i>
+            <img src="./assets/rule2-sec.png" alt="" />
+          </div>
+        </div>
+        <!-- Rule #2 end -->
+        <!-- Rule #3 start -->
+        <div class="rules-container__rule">
+          <p class="rules-container__text">
+            Each cell with two or three neighbors survives.
+          </p>
+          <div class="rules-container__img-container">
+            <img src="./assets/rule3-first.png" alt="" />
+            <i class="fas fa-arrow-right rules-container__icon"></i>
+            <img src="./assets/rule3-sec.png" alt="" />
+          </div>
+        </div>
+        <!-- Rule #3 end -->
+        <h3 class="rules-container__subtitle">
+          For a space that is empty or unpopulated
+        </h3>
+        <!-- Rule #4 start -->
+        <div class="rules-container__rule">
+          <p class="rules-container__text">
+            Each cell with three neighbors becomes populated.
+          </p>
+          <div class="rules-container__img-container">
+            <img src="./assets/rule4-first.png" alt="" />
+            <i class="fas fa-arrow-right rules-container__icon"></i>
+            <img src="./assets/rule4-sec.png" alt="" />
+          </div>
+        </div>
+        <!-- Rule #4 start -->
+      </div>
+    </div>
+    <div class="dark-background"></div>
     <div class="grid"></div>
   </body>
 </html>
