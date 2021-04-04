@@ -175,4 +175,25 @@ body {
   top: 0;
   width: 100vw;
 }
+
+.footer {
+  padding: 1em 0;
+  text-align: center;
+}
+
+.footer__text {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.footer__link {
+  color: black;
+  font-size: 1.5rem;
+  -webkit-transition: color 100ms;
+  transition: color 100ms;
+}
+
+.footer__link:hover {
+  color: rgba(0, 0, 0, 0.582);
+}
 /*# sourceMappingURL=main.css.map */

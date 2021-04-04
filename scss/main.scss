@@ -128,3 +128,24 @@ body {
   top: 0;
   width: 100vw;
 }
+
+.footer {
+  padding: 1em 0;
+  text-align: center;
+  // footer__text
+  &__text {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  // footer__link 
+  &__link {
+    color: black;
+    font-size: 1.5rem;
+    transition: color 100ms;
+    
+    &:hover {
+      color: rgba(0, 0, 0, 0.582);
+    }
+  }
+}
